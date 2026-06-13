@@ -5,13 +5,11 @@ int main() {
 const int N = 20;
 int height[N];
 
-// Ввод данных
 cout << "Введите рост 20 учеников (в см):\n";
 for (int i = 0; i < N; i++) {
 cin >> height[i];
 }
 
-// Вычисление среднего роста
 int sum = 0;
 for (int i = 0; i < N; i++) {
 sum += height[i];
@@ -19,7 +17,6 @@ sum += height[i];
 
 double average = (double)sum / N;
 
-// Подсчет учеников выше среднего
 int count = 0;
 for (int i = 0; i < N; i++) {
 if (height[i] > average) {
@@ -27,7 +24,6 @@ count++;
 }
 }
 
-// Вывод результата
 cout << "Средний рост: " << average << " см" << endl;
 cout << "Количество учеников выше среднего: " << count << endl;
 
